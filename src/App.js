@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, Chip } from "@mui/material";
 
 function App() {
   return (
@@ -8,6 +8,15 @@ function App() {
       <Button variant="contained">버튼입니다.</Button>
       <hr className="my-2" />
       <span className="text-[color:var(--mui-color-primary-main)]">하하하</span>
+      <hr className="my-2" />
+      <Chip
+        label={
+          <span>
+            <i className="fa-solid fa-bell"></i> Chip Filled
+          </span>
+        }
+        className="!pt-1"
+      />
     </div>
   );
 }
